@@ -12,3 +12,6 @@ if number.isdigit():
 else:
    print("Erro: valor inormado não é numérico. Favor execure novamente e informe um número")
    quit()
+
+#Pega um valor da operaão randomica
+random_number = random.randint(0, number)
