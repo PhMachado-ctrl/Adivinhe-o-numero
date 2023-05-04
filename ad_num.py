@@ -16,12 +16,27 @@ else:
 #Pega um valor da operação randomica
 random_number = random.randint(0, number)
 
+
+
 #Pega a resposta do usuário
 while True:
-   answer = input("Adivinhe o número: ")
+    answer = input("Adivinhe o número: ")
 
-   if answer.isdigit():
-      answer = int(answer)
-   else:
-       print("Erro: valor inormado não é numérico. Favor execure novamente e informe um número")
-       continue #Repete o Loop do começa
+    if answer.isdigit():
+        answer = int(answer)
+    else:
+        print("Erro: valor inormado não é numérico. Favor execure novamente e informe um número")
+        continue #Repete o Loop do começa
+    
+    #Verifica se é igual ao numero
+    if answer == number:
+      print("Acertou!")
+      break
+    elif answer > number:
+       print("Chutou alto, o número é menor que isso...")
+    else:
+       print("Chutou baixo, o número é maior que isso...")
+       
+
+   
+  
