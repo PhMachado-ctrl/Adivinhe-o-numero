@@ -13,5 +13,15 @@ else:
    print("Erro: valor inormado não é numérico. Favor execure novamente e informe um número")
    quit()
 
-#Pega um valor da operaão randomica
+#Pega um valor da operação randomica
 random_number = random.randint(0, number)
+
+#Pega a resposta do usuário
+while True:
+   answer = input("Adivinhe o número: ")
+
+   if answer.isdigit():
+      answer = int(answer)
+   else:
+       print("Erro: valor inormado não é numérico. Favor execure novamente e informe um número")
+       continue #Repete o Loop do começa
